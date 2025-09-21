@@ -5,12 +5,15 @@ int main()
 
 float n;
 float sum=0;
+float l;
 printf("enter the nth term upto which you want its sum :");
 scanf("%f",&n);
 for(int i=2;i<=n;i=i+2)
-   { sum=sum+(i/(2*i-1));
+   {l=(i/(2*i-1)); 
+    sum=sum+l;
     printf("%f",sum); }
-   
+ 
+  return 0;
   
 
 }
