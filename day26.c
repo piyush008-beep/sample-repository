@@ -4,14 +4,27 @@
   345
  2345
 12345*/
+
 #include <stdio.h>
-int main()
-{
-  for(int i=5;i>=1;i--)
-      for(int k=5;k<=i-1)
-    {for(int j=5;j>=i;j--)
-    
-    {printf("%d",j);}
-    printf("\n");
+
+int main() {
+    int i, j, k;
+
+    for (i = 5; i >= 1; i--) {
+
+
+        for (j = 1; j < i; j++) {
+            printf(" ");
+        }
+
+
+        for (k = i; k <= 5; k++) {
+            printf("%d", k);
+        }
+
+       
+        printf("\n");
     }
-    return 0;}
+
+    return 0;
+}
