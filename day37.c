@@ -14,13 +14,13 @@ int main() {
         }
     }
 
-    row_sum = 0; 
+     
     printf("Calculating row sum");
     for (int i = 0; i < 3; i++) {      
-       
+       row_sum=0;
         
         for (int j = 0; j < 3; j++) {  
-            row_sum += matrix[i][j]; 
+            row_sum=row_sum+matrix[i][j];
         }
         
         printf("\n");
