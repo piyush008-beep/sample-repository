@@ -24,11 +24,12 @@ int main(){
         printf("%d ",arr[i]);
     }
      int a=n-k;
-    for(int i=n;i<=a;i--){
-        arr[i]++;
+    for(int i=n;i>a;i--){
+        arr[i]=arr[i]+arr[i-1];
         printf("%d\n",arr[i]);
         
     }
+      
      
     return 0;
 
