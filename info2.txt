@@ -1,0 +1,1 @@
+text that is read from info1.txt piyush is my name and i am studying programming in c
