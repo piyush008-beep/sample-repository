@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "DAY45.1.C": "cpp",
-        "string.h": "c"
+        "string.h": "c",
+        "DAY80.C": "cpp"
     }
 }
