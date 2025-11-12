@@ -12,7 +12,7 @@ int main(){
 
     
     if (fp == NULL) {
-        perror("Error opening file");
+        printf("Error opening file");
         return 1;
     }
 
