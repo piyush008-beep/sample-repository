@@ -23,7 +23,7 @@ int main(){
         case ADMIN:
         printf("HELLO ADMIN!!");
         break; default:
-            printf("Invalid light value entered.\n");
+            printf("Invalid PERSON value entered.\n");
             break;
     }
 
