@@ -1,18 +1,37 @@
 #include <stdio.h>
-int main(){
-    int d;
-    int arr[d];
-    int count=0;
-    printf("enter the number of integers in the array");
-    scanf("%d",&d);
-    for(int i=0;i<=d;i++){
-        if(arr[i]<0 && arr[i+1]<0){
-            count++;
-        }
-        else{
-            printf("0");
-        }
-        
+
+int main() {
+    int n, k;
+
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter array elements:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-return 0;
+
+    printf("Enter window size k: ");
+    scanf("%d", &k);
+
+    
+    for (int i = 0; i <= n - k; i++) {
+
+        int found = 0;
+
+       
+        for (int j = i; j < i + k; j++) {
+            if (arr[j] < 0) {
+                printf("%d ", arr[j]);  
+                found = 1;
+                break;
+            }
+        }
+
+        if (!found)
+            printf("0 ");
+    }
+
+    return 0;
 }
