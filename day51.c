@@ -4,24 +4,37 @@
  the index of first and last occurrence. Print -1, -1 if the target is not present.*/
 
 #include <stdio.h>
-int main(){
-    int a=-1;
-    int num[5];
-    int n;
-    
-    printf("Enter the integers in an array \n");
-    for(int i=0;i<5;i++){
-        scanf("%d",&num[i]);
+
+int main() {
+    int n, target;
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int nums[n];
+    printf("Enter %d sorted elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &nums[i]);
     }
-    for(int i=0;i<5;i++){
-        printf("  %d ",num[i]);
-    }
+
+    printf("Enter target element: ");
+    scanf("%d", &target);
+
+    int first = -1, last = -1;
+
     
-    printf("enter your target number \n");
-    scanf("%d",&n);
-    for(int i=0;i<5;i++){
-        if(num[i]==n){
-        printf(" %d ",i);
+    for (int i = 0; i < n; i++) {
+        if (nums[i] == target) {
+            if (first == -1) first = i; 
+            last = i;                   
         }
     }
-    return 0;}
+
+    if (first == -1) {
+        printf("-1, -1\n");
+    } else {
+        printf("First occurrence at index %d\n", first);
+        printf("Last occurrence at index %d\n", last);
+    }
+
+    return 0;
+}
