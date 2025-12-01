@@ -1,3 +1,4 @@
+/*day96*/
 #include <stdio.h>
 
 struct Date {
